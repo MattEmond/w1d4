@@ -11,11 +11,15 @@ students.sort(function(a,b) {
   if (nameA < nameB) {
     return -1;
   }
-  if (nameA > nameB) {
+  else if (nameA > nameB) {
     return 1;
+  }
+  else if (nameA = nameB) {
+      return a.age - b.age ;
   }
 
   return 0;
+
 });
 
 console.log(students);
