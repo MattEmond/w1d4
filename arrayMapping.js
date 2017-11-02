@@ -3,8 +3,8 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
-var result = input.map(function(x, y) {
-  return (x * x) + (y * y)
+var result = input.map(function(arr) {
+  return Math.sqrt(arr.x * arr.x + (arr.y * arr.y))
 });
 console.log(result)
 
